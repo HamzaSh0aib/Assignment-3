@@ -215,7 +215,7 @@ else{
 }
 
 //Question no 22
-Map ShoppingCart = {
+Map<String,dynamic> ShoppingCart = {
   'Apple':20,
   'banana':12,
   'mango':170
