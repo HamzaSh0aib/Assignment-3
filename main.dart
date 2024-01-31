@@ -109,6 +109,7 @@ for(String i in originalList){
 List<int> mainList = [1,2,3,4,5,6,7,8,9,0];
 int n = 5;
 List<int> secondlist = mainList.sublist(0,n);
+print(mainList);
 print('First $n Element = $secondlist');
 
 //Question no 12
@@ -154,6 +155,75 @@ for (var element in total_list) {
 }
 print('All numbers List = $total_list');
 print('Even List  = $even_number');
-//Question  no 17
 
+//Question no 17
+List integer1 = [1,2,3,4,5,6,7,8,9,0];
+final squredList = integer1.map((e) =>e*e).toList();
+print(squredList);
+
+//Question no 18
+Map<String,dynamic> person ={
+  'name':'john',
+  'age': 18,
+  'isStudent': true
+};
+if(person['age']==18 && person['isStudent']==true){
+  print('Elegible');
+}
+else{
+  print('Not Elegible');
+}
+
+//question no 19
+Map<String,dynamic> product = {
+  'name':'Mango',
+  'price': 200,
+  'quantity': 10
+
+};
+if(product['quantity']>0){
+  print('In Stock');
+}
+else{
+  print('Out of Stock');
+}
+
+//Question no 20
+Map<String,dynamic> car = {
+  'brand':'Toyota',
+  'color':'red',
+  'isSedan': true
+};
+if(car['color']=='red' && car['isSedan']==true){
+  print('Is Match');
+}
+else{
+  print('Not Match');
+}
+//Question no 21
+Map<String,dynamic> user ={
+  'name':'Hamza',
+  'isAdmin':true,
+  'isActive': true
+};
+if(user['isAdmin']as bool && user['isActive'] as bool){
+  print('Active admin');
+}
+else{
+  print('Not an active admin');
+
+}
+
+//Question no 22
+Map ShoppingCart = {
+  'Apple':20,
+  'banana':12,
+  'mango':170
+};
+if(ShoppingCart.containsKey('Apple')){
+  print('Product Found ');
+}
+else{
+  print('Product Not Found');
+}
 }
